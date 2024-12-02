@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahd Abu Nawa's Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Layout */
+        body {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            background-color: #384B70;
+            color: #FCFAEE;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .sidebar ul li a {
+            color: #FCFAEE;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #507687;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 20%;
+            width: 80%;
+            padding: 50px;
+        }
+
+        .section {
+            padding: 150px 0;
+            min-height: 100vh;
+            font-size: 20px;
+        }
+
+        .section h1 {
+            font-size: 3.5em;
+            color: #B8001F;
+            margin-bottom: 60px;
+        }
+
+        .skills-icons {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            font-size: 2em;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .contact-info {
+            font-size: 1.1em;
+            color: #D7B26D;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .inner-list {
+            margin-left: 30px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Skill Bars */
+        .skills-container {
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 30px;
+        }
+
+        .skill {
+            padding: 5px;
+            background-color: #507687;
+            color: white;
+            text-align: center;
+            width: 0;
+            animation: loadSkill 2s forwards;
+        }
+
+        /* Define widths for each skill */
+        .html {
+            width: 90%;
+        }
+
+        .javascript {
+            width: 80%;
+        }
+
+        .python {
+            width: 85%;
+        }
+
+        .java {
+            width: 75%;
+        }
+
+        /* Skill bar animation */
+        @keyframes loadSkill {
+            from {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="profile-pic" style="text-align: center; margin-bottom: 15px;">
+            <img src="profilePicture.jpg" alt="Profile Picture" style="border-radius: 50%; width: 100px;">
+        </div>
+        <h2>Shahd Abu Nawa</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="content">
+        <div id="about" class="section">
+            <h1>About</h1>
+            <div class="contact-info">
+                <b>+972 56-8199167 | shahd.abunawa@gmail.com | Bethlehem, Palestine</b>
+            </div>
+            <p>Passionate software engineer with expertise in agile frameworks and strong experience in developing
+                efficient solutions. <br>Adept at coordinating complex projects and delivering high-quality results that
+                align with business goals.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shosho.jawabreh" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" alt="Facebook" width="30">
+                </a>
+                <a href="https://x.com/jawabreh_shahd" target="_blank" rel="noopener noreferrer">
+                    <img src="x.png" alt="Twitter" width="30">
+                </a>
+                <a href="https://www.linkedin.com/in/shahd-abu-nawa-352222327/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="linkedin.png" alt="LinkedIn" width="30">
+                </a>
+                <a href="https://github.com/shahdabunawa" target="_blank" rel="noopener noreferrer">
+                    <img src="github.png" alt="GitHub" width="30">
+                </a>
+            </div>
+        </div>
+        <div id="experience" class="section">
+            <h1>Experience</h1>
+            <p><strong>Software Engineering Student</strong> Scholarship Recipient & Project Developer
+                Udacity, in collaboration with Palestine Launchpad
+                Remote | March 2024 – September 2024
+                Completed a nanodegree in Web Development intro to programming, awarded by Udacity and Palestine
+                Launchpad. <br>
+                Developed a couple of projects using Python,JavaScript.
+                Collaborated with peers virtually, enhancing teamwork and communication skills.
+                <br> Applied agile methodologies to complete the capstone project successfully.
+            </p>
+        </div>
+        <div id="education" class="section">
+            <h1>Education</h1>
+            <ul>
+                <p>Bethlehem University</p>
+                <p>Bachelor’s Degree in Software Engineering</p>
+                <p>Expected Graduation: July, 2026</p>
+                <p>Relevant Coursework:</p>
+                <ul>
+                    <ul class="inner-list">
+                        <li>Data Structures and Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>Database Management Systems</li>
+                        <li>Software Engineering</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="skills" class="section">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <div class="skill html">HTML - 90%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill javascript">JavaScript - 80%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill python">Python - 85%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill java">Java - 75%</div>
+                </div>
+            </div>
+            <p>
+                <b>Databases:</b> MySQL<br>
+                <b>Operating Systems:</b> Linux, Windows<br>
+                <b>Other Relevant Skills:</b> Agile Methodologies, Problem-Solving.
+            </p>
+        </div>
+        <div id="interests" class="section">
+            <h1>Interests</h1>
+            <p>Creative Thinker with a Love for Books, Sports, and Coffee
+                As a software engineering student, I balance my
+                analytical side with a range of interests that
+                keep me curious and inspired. I love getting lost
+                in a good book, following the thrills of Formula
+                One racing, and enjoying the simple pleasure of a
+                well-brewed coffee. My days are fueled by a mix of
+                intellectual challenges and small joys, and I find
+                inspiration in connecting with others and exploring
+                new ideas. Whether diving into a novel or cheering
+                on my favorite team, I bring enthusiasm and curiosity to everything I do.</p>
+        </div>
+        <div id="awards" class="section">
+            <h1> Awards and Certificates </h1>
+            <ul>
+                <li><img src="trophy.avif" alt="Trophy" width="20"> Certification Name – Risk management - IEEE BU
+                    Student Branch - 26/4/2024</li>
+                <li><img src="trophy.avif" alt="Trophy" width="20"> Digital security – IEEE BU Student Branch –
+                    19/4/2024
+                </li>
+                <li><img src="trophy.avif" alt="Trophy" width="20"> Participation in IEEEXtreme 17.0 Programming
+                    Competition – IEEE - 29/10/2023</li>
+                <li><img src="trophy.avif" alt="Trophy" width="20"> Participation in IEEEXtreme 18.0 Programming
+                    Competition – IEEE - 26/10/2024</li>
+                <li><img src="trophy.avif" alt="Trophy" width="20"> Intro to Programming Web Development Nanodegree –
+                    Udacity
+                    (sponsored by Palestine Launchpad) – 22/9/2024</li>
+            </ul>
+        </div>
+        <div id="contact" class="section">
+            <h1>Contact</h1>
+            <p><b>Address:</b> Palestine - Bethlehem - Aldoha - Alestiqlal Street <br><b>Phone:</b>
+                +972 56-8199167 <br><b>Email:</b> shahd.abunawa@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
